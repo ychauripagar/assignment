@@ -42,7 +42,7 @@ class _ArticleDetailsScreenState extends State<ArticleDetailsScreen> {
       body: Column(
         children: [
           Hero(
-            tag: '${widget.articleModel!.id}',
+            tag: '${widget.articleModel.id}',
             child: CachedNetworkImage(
               imageUrl: getImage(widget.articleModel),
               placeholder: (context, url) => CircularProgressIndicator(),
